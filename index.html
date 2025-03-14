@@ -3,37 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot en HTML</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        #chatbox { width: 300px; padding: 10px; border: 1px solid #ccc; }
-        button { margin-top: 10px; padding: 5px 10px; cursor: pointer; }
-    </style>
+    <title>Chatbot con IA</title>
 </head>
 <body>
-    <h2>Chatbot Simple</h2>
-    <p>Escribe un mensaje y el chatbot responderá.</p>
-    
-    <input type="text" id="chatbox" placeholder="Escribe aquí...">
-    <button onclick="responder()">Enviar</button>
-    
+    <h2>Chatbot con OpenAI</h2>
+    <input type="text" id="pregunta" placeholder="Escribe tu pregunta">
+    <button onclick="obtenerRespuesta()">Preguntar</button>
     <p id="respuesta"></p>
 
-    <script>
-        function responder() {
-            var input = document.getElementById("chatbox").value.toLowerCase();
-            var respuesta = "";
-
-            if (input.includes("hola")) {
-                respuesta = "¡Hola! ¿Cómo estás?";
-            } else if (input.includes("como estas")) {
-                respuesta = "Estoy bien, gracias por preguntar.";
-            } else {
-                respuesta = "No entiendo, pero sigo aprendiendo. 😊";
-            }
-
-            document.getElementById("respuesta").innerHTML = respuesta;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
