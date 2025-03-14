@@ -1,4 +1,4 @@
-const apiKey = "TU_OPENAI_API_KEY";  // Reemplaza con tu clave de OpenAI
+const apiKey = "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";  // Reemplaza con tu clave de OpenAI
 
 async function obtenerRespuesta() {
     let pregunta = document.getElementById("pregunta").value;
